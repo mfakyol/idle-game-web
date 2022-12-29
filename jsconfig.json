@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@components/*": ["components/*"],
+      "@views/*": ["views/*"],
+      "@layouts/*": ["layouts/*"],
+      "@styles/*": ["styles/*"],
+      "@hooks/*": ["hooks/*"],
+      "@context": ["context"],
+      "@redux/*": ["redux/*"],
+      "@redux": ["redux"]
+    }
+  },
+  "exclude": ["node_modules"]
+}

@@ -1,0 +1,8 @@
+{
+  "editor.tabSize": 2,
+  "editor.detectIndentation": false,
+  "editor.insertSpaces": true,
+  "prettier.printWidth": 150,
+
+  "eslint.workingDirectories": ["./_shared", "./web", "./mobile"]
+}

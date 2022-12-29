@@ -1,0 +1,18 @@
+.game {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background-color: red;
+
+  & > .contentWrapper {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: blue;
+
+    & > .content {
+      background-color: aqua;
+      flex: 1;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.sidebar {
+  width: 240px;
+
+  & > .tabs {
+
+
+    & > .tab {
+      cursor: pointer;
+
+      &.active {
+        background-color: rebeccapurple;
+      }
+
+    }
+  }
+}
