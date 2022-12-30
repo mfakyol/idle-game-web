@@ -3,13 +3,14 @@
     "baseUrl": ".",
     "paths": {
       "@components/*": ["components/*"],
+      "@constants/*": ["constants/*"],
       "@views/*": ["views/*"],
       "@layouts/*": ["layouts/*"],
       "@styles/*": ["styles/*"],
       "@hooks/*": ["hooks/*"],
       "@context": ["context"],
-      "@redux/*": ["redux/*"],
-      "@redux": ["redux"]
+      "@store/*": ["store/*"],
+      "@store": ["store"]
     }
   },
   "exclude": ["node_modules"]

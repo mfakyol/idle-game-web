@@ -1,16 +1,70 @@
 .sidebar {
   width: 240px;
+  background-color: var(--bg-secondary);
+
+  & > .head {
+    display: flex;
+    align-items: center;
+    height: 64px;
+
+    & > .closeIcon {
+      margin-left: auto;
+      padding: 4px;
+      width: 32px;
+      height: 32px;
+      margin-right: 12px;
+      cursor: pointer;
+      display: none;
+    }
+  }
 
   & > .tabs {
-
-
     & > .tab {
+      display: flex;
+      align-items: center;
       cursor: pointer;
+      padding: 8px 16px;
 
-      &.active {
-        background-color: rebeccapurple;
+      & > .icon {
+        width: 24px;
+        height: 24px;
+        margin-right: 8px;
       }
 
+      & > .label {
+        font-weight: 500;
+      }
+
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.2);
+      }
+
+      &.active {
+        background-color: var(--color-primary);
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    transform: translateX(-100%);
+    transition: transform 0.2s;
+    z-index: 10;
+
+    &.open {
+      transform: translateX(0);
+    }
+
+    & > .head {
+      & > .closeIcon {
+        display: unset;
+      }
     }
   }
 }
