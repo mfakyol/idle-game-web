@@ -1,0 +1,13 @@
+{
+  "2": {
+    "id": 2,
+    "label": "wood",
+    "icon": "icons/wood.svg"
+  },
+
+  "3": {
+    "id": 3,
+    "label": "hard_wood",
+    "icon": "icons/hard-wood.svg"
+  }
+}

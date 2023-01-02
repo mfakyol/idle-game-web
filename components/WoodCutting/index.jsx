@@ -14,8 +14,8 @@ function WoodCutting() {
   };
 
   const handleOnClick = (workId, typeId) => {
-    if (currentWork?.id == workId && currentWork?.type?.id == typeId) return;
-    dispatch(setCurrentWork({ workId, typeId }));
+    if (currentWork?.id == workId && currentWork?.typeId == typeId) dispatch( setCurrentWork(null));
+    else dispatch(setCurrentWork({ id: workId, typeId }));
   };
 
   return (
@@ -28,7 +28,7 @@ function WoodCutting() {
           </div>
         </div>
         <div className={classes.workInfoRow}>
-          <ProgressBar />
+          <ProgressBar currentWork={currentWork?.id == work.id ? currentWork : null} />
         </div>
       </div>
 
@@ -37,12 +37,12 @@ function WoodCutting() {
       <ul className={classes.list}>
         {work.types.map((type) => (
           <li
-            className={`${classes.item} ${currentWork?.id == work.id && currentWork?.type?.id == type?.id ? classes.active : ""}`}
+            className={`${classes.item} ${currentWork?.id == work.id && currentWork?.typeId == type?.id ? classes.active : ""}`}
             key={type.id}
             onClick={() => handleOnClick(work.id, type.id)}
           >
             <span className={`${classes.badge} ${classes.active}`}>
-              {currentWork?.id == work.id && currentWork?.type?.id == type?.id ? "cutting" : "cut"}
+              {currentWork?.id == work.id && currentWork?.typeId == type?.id ? "cutting" : "cut"}
             </span>
             <span className={classes.label}>{type.label}</span>
             <span className={classes.info}>{`${type.baseXp} xp / ${convertMSToSecond(type.baseInterval)} second`}</span>

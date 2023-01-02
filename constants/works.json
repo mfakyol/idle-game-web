@@ -13,7 +13,10 @@
         "baseInterval": 3000,
         "unLockLevel": 0,
         "icon": "icons/normal-tree.svg",
-        "rewards": [{ "id": 1, "label": "wood", "possibility": 1 },{ "id": 1, "label": "wood", "possibility": 0.1 }]
+        "rewards": [
+          { "id": 2, "quantity": 1, "possibility": 1 },
+          { "id": 2, "quantity": 1, "possibility": 0.1 }
+        ]
       },
       {
         "id": 2,
@@ -22,7 +25,10 @@
         "baseInterval": 3000,
         "unLockLevel": 10,
         "icon": "icons/oak-tree.svg",
-        "rewards": [{ "id": 2, "label": "oak_wood", "possibility": 1 }]
+        "rewards": [
+          { "id": 2, "quantity": 1, "possibility": 1 },
+          { "id": 2, "quantity": 1, "possibility": 0.1 }
+        ]
       },
       {
         "id": 3,
@@ -31,7 +37,10 @@
         "baseInterval": 3000,
         "unLockLevel": 20,
         "icon": "icons/willow-tree.svg",
-        "rewards": [{ "id": 3, "label": "willow_wood", "possibility": 1 }]
+        "rewards": [
+          { "id": 3, "quantity": 1, "possibility": 1 },
+          { "id": 2, "quantity": 1, "possibility": 0.1 }
+        ]
       },
       {
         "id": 4,
@@ -40,7 +49,10 @@
         "baseInterval": 3000,
         "unLockLevel": 30,
         "icon": "icons/pine-tree.svg",
-        "rewards": [{ "id": 4, "label": "pine_wood", "possibility": 1 }]
+        "rewards": [
+          { "id": 3, "quantity": 1, "possibility": 1 },
+          { "id": 3, "quantity": 1, "possibility": 0.1 }
+        ]
       }
     ]
   }

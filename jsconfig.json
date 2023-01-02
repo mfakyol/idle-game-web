@@ -10,7 +10,8 @@
       "@hooks/*": ["hooks/*"],
       "@context": ["context"],
       "@store/*": ["store/*"],
-      "@store": ["store"]
+      "@store": ["store"],
+      "@lib/*": ["lib/*"]
     }
   },
   "exclude": ["node_modules"]
